@@ -1,12 +1,32 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>My GitHub Page</title>
-  </head>
-  <body>
-    <h1>Hello</h1>
-    <p>This site is hosted on GitHub Pages.</p>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Valentine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Will you be my Valentine?</h1>
+
+  <div id="buttons">
+    <button onclick="answerYes()">Yes</button>
+    <button onclick="answerNo()">No</button>
+  </div>
+
+  <p id="message"></p>
+
+  <script>
+    function answerYes() {
+      document.getElementById("message").textContent = "I am happy ❤️";
+      document.getElementById("buttons").style.display = "none";
+    }
+
+    function answerNo() {
+      document.getElementById("message").textContent = "I am sad… are you sure?";
+    }
+  </script>
+
+</body>
 </html>
